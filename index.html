@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>V-Chat</h2>
+        <div id="username-container">
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <button onclick="enterChat()">Enter</button>
+        </div>
+        <div id="chat-container" style="display: none;">
+            <ul id="messages"></ul>
+            <input type="text" id="message-input" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
